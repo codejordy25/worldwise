@@ -1,0 +1,26 @@
+// import { defineConfig } from "vite";
+
+// import react from "@vitejs/plugin-react";
+// import eslint from "vite-plugin-eslint";
+
+// //htpps://vitejs.dev/config/
+// export default defineConfig({
+//     plugins:[react(), eslint()],
+// });
+
+{
+  // ESLint configuration goes here
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    // Add your custom rules here
+  }
+}
